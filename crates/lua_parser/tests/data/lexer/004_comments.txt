@@ -1,0 +1,5 @@
+COMMENT 17 "-- Simple comment"
+WHITESPACE 1 "\n"
+COMMENT 40 "--[[ Long comment\nover multiple\nlines ]]"
+WHITESPACE 1 "\n"
+COMMENT 41 "--[=[\n--[==[\nNested long comment\n]==]\n]=]"

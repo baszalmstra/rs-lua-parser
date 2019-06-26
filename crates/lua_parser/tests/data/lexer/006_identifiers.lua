@@ -1,0 +1,10 @@
+a
+bar
+foo_bar
+_foo
+bar_
+_
+And
+AND
+_VERSION
+_G

@@ -1,0 +1,2 @@
+[alias]
+gen-syntax = "run --bin tools gen-syntax"

@@ -1,0 +1,81 @@
+// Stores definitions which must be used in multiple places
+// See `cargo gen-syntax` (defined in crates/tools/src/main.rs)
+Grammar(
+    single_char_tokens: [
+        // Original Lua symbols
+        ["+", "PLUS"],
+        ["-", "MINUS"],
+        ["*", "STAR"],
+        ["/", "SLASH"],
+        ["%", "PERCENT"],
+        ["^", "CARET"],
+        ["#", "HASH"],
+        [".", "DOT"],
+        ["<", "LT"],
+        [">", "GT"],
+        ["=", "EQ"],
+        ["(", "L_PAREN"],
+        [")", "R_PAREN"],
+        ["{", "L_CURLY"],
+        ["}", "R_CURLY"],
+        ["[", "L_BRACKET"],
+        ["]", "R_BRACKET"],
+        [";", "SEMI"],
+        [":", "COLON"],
+        [",", "COMMA"]
+    ],
+    // Tokens for which the longest match must be chosen (e.g. `..` is a DOTDOT, but `.` is a DOT)
+    multi_char_tokens: [
+        // Original Lua symbols
+        ["==", "EQEQ"],
+        ["~= ", "NEQ"],
+        ["<=", "LTEQ"],
+        [">=", "GTEQ"],
+        ["..", "DOTDOT"],
+        ["...", "DOTDOTDOT"],
+        ["::", "COLONCOLON"]
+    ],
+    keywords: [
+        // Original Lua keywords
+        "and",
+        "break",
+        "do",
+        "else",
+        "elseif",
+        "end",
+        "false",
+        "for",
+        "function",
+        "goto",
+        "if",
+        "in",
+        "local",
+        "nil",
+        "not",
+        "or",
+        "repeat",
+        "return",
+        "then",
+        "true",
+        "until",
+        "while"
+    ],
+    literals: [
+        "INT_NUMBER",
+        "FLOAT_NUMBER",
+        "STRING",
+    ],
+    tokens: [
+        "ERROR",
+        "IDENT",
+        "WHITESPACE",
+        "COMMENT"
+    ],
+    nodes: [
+        "CHUNK",
+    ],
+    ast: {
+        "Chunk": (
+        )
+    }
+)

@@ -1,0 +1,15 @@
+[package]
+name = "lua_parser"
+version = "0.1.0"
+authors = ["Bas Zalmstra <zalmstra.bas@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rowan = "0.5"
+text_unit = { version = "0.1.6", features = ["serde"] }
+smol_str = { version = "0.1.10", features = ["serde"] }
+unicode-xid = "0.1.0"
+drop_bomb = "0.1.4"
+
+[dev-dependencies]
+test_utils = { path="../test_utils"}
